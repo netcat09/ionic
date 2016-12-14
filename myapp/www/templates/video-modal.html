@@ -1,0 +1,12 @@
+<ion-modal-view ng-click="close()">
+  <ion-header-bar>
+    <h1 class="title">{{ video.title }}</h1>
+
+  </ion-header-bar>
+  <ion-content>
+    <iframe width="640" height="480" src="{{ url }}" frameborder="0" allowfullscreen></iframe>
+    <h5>{{ video.description | limitTo: 150 }}</h5>
+    <button ng-click="close()">Close</button>
+    {{ url }}
+  </ion-content>
+</ion-modal-view>
